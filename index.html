@@ -30,20 +30,69 @@ crossorigin="anonymous"></script>
 <body>
 
 
-        <div class="jumbotron">
-                <h1>Hello, world!</h1>
-                <p>...</p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-              </div>
+       
 
   <h1>Happy Homework!!</h1>
+    <!-- This div holds my directions for the game -->
+  <Div id="directions">
+
+    <p>
+        > You are given a random number.
+        <br>
+        > There are three buttons below, a left, middle and right.
+        <br>
+        > By clicking on a button, you will add a specific amount of points to your score.
+        <br>
+        > If you match the random number with your guesses than you win, if you go over you lose.
+        <br>
+        > The value of the buttons is a big friggin mystery until you click on it.
+        <br>
+        > Each time a new game starts the buttons numbers will change.
+    </p>
+
+  </Div>
+
+    <!-- These are the buttons you push that have random numbers -->
+      <div class="btn-group" role="group" aria-label="...">
+        <button type="button" id="btnLeft">Left</button>
+        <button type="button" id="btnMid">Middle</button>
+        <button type="button" id="btnRight">Right</button>
+      </div>
+
+      <br>
+      <br>
 
 
+      <!-- This div holds my random number to try and match-->
+      <div>
+        <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+      </div>
+
+
+      <br>
+      <br>
+
+
+      <!-- This div holds my wins -->
+      <div>
+        <h1>Wins: <span id="wins"></span></h1>
+      </div>
+
+      <!-- This div holds my losses -->
+      <div>
+        <h1>Losses: <span id="losses"></span></h1>
+      </div>
+
+      <!-- This div holds the total score -->
+      <div>
+        <h1>Total Score: <span id="totalScore"></span></h1>
+      </div>
+      
 
 
 <!-- JAVASCRIPT - This must be last item in <body>. -->
   <!-- ========================================= -->
-  <script type="text/javascript" src="game.js"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 </html>
